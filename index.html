@@ -3,324 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mayank - Salesforce & Veeva Developer</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Mayank Anand is a Salesforce Software Engineering Lead specializing in Experience Cloud, LWC, Apex, integrations, and release engineering.">
+    <meta name="theme-color" content="#0176d3">
+    <title>Mayank Anand | Salesforce Software Engineering Lead</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
         <div class="container">
-            <nav class="navbar">
-                <a href="#" class="logo">Mayank</a>
-                <ul class="nav-links">
+            <nav class="navbar" aria-label="Primary navigation">
+                <a href="#top" class="logo" aria-label="Mayank Anand, home">
+                    <span class="logo-mark">MA</span>
+                    <span class="logo-copy">Mayank Anand<small>Salesforce Engineering</small></span>
+                </a>
+                <ul class="nav-links" id="primary-navigation">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#expertise">Expertise</a></li>
                     <li><a href="#experience">Experience</a></li>
+                    <li><a href="#expertise">Expertise</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#education-achievements">Education & Achievements</a></li>
-                    <li><a href="#interests-reading">Interests & Reading</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <div class="hamburger">
+                <button class="hamburger" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
-                </div>
+                </button>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <img src="images/profile.jpg" alt="Mayank" class="profile-img">
-                <h1>Mayank</h1>
-                <h2>Senior Salesforce Developer</h2>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn">Contact Me</a>
-                    <a href="Mayank_resume.pdf" class="btn btn-outline" download>Download Resume</a>
+    <main id="main-content">
+        <section class="hero" id="top">
+            <div class="container hero-layout">
+                <div class="hero-content">
+                    <p class="eyebrow">Software Engineering Lead · Bengaluru, India</p>
+                    <h1>Building Salesforce platforms that work beautifully at scale.</h1>
+                    <p class="hero-summary">I lead Salesforce engineering across Experience Cloud, Apex, LWC, integrations, and release automation—turning complex requirements into fast, maintainable products.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn">Let’s connect <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        <a href="Mayank_resume.pdf" class="btn btn-outline" download>Download resume <i class="fas fa-download" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="hero-stats" aria-label="Career highlights">
+                        <div class="stat"><strong>8+</strong><span>Years in Salesforce</span></div>
+                        <div class="stat"><strong>300K+</strong><span>Portal users supported</span></div>
+                        <div class="stat"><strong>95.8%</strong><span>Faster deployments</span></div>
+                    </div>
+                </div>
+                <div class="hero-visual" aria-label="Portrait of Mayank Anand">
+                    <div class="portrait-ring"></div>
+                    <img src="images/profile.jpg" alt="Mayank Anand" class="profile-img">
+                    <div class="role-card">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        <div><small>Currently at</small><strong>Optum · UnitedHealth Group</strong></div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
-            </div>
-            <div class="about-content">
+        <section id="about" class="about">
+            <div class="container split-section">
+                <div class="section-heading">
+                    <p class="eyebrow">About</p>
+                    <h2>Practical engineering.<br>Measurable outcomes.</h2>
+                </div>
                 <div class="about-text">
-                    <p>I am a skilled Salesforce and Veeva Developer with extensive experience in developing and implementing solutions for the life sciences industry. Currently working as an Assistant Manager (Veeva Development) at Viatris, I specialize in creating scalable solutions that enhance user experience and streamline business processes.</p>
-                    <p>With a strong background in Salesforce development, Veeva CRM, and Veeva Vault, I have successfully delivered projects that integrate cloud services for enhanced data management and automation. My expertise extends to Azure cloud integrations, providing comprehensive solutions for life sciences clients.</p>
+                    <p class="lead">I’m a Salesforce developer and engineering lead with 8+ years of experience delivering Experience Cloud products, CRM solutions, integrations, and modern release pipelines.</p>
+                    <p>At Optum, I lead the move to GitHub-based Salesforce CI/CD and build portal experiences supporting more than 300,000 users. My work centers on clean component architecture, performance tuning, and reliable delivery.</p>
+                    <p>My earlier experience across Viatris, Happiest Minds, and Accenture spans Veeva CRM, Azure integrations, global release operations, and Salesforce development for life sciences teams.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Expertise Section -->
-    <section id="expertise" class="expertise">
-        <div class="container">
-            <div class="section-title">
-                <h2>My Expertise</h2>
-            </div>
-            <div class="expertise-grid">
-                <div class="expertise-card">
-                    <h3>Veeva CRM</h3>
-                    <p>Extensive experience with Veeva CRM modules including Account Management, Order Management, Approved Email, Veeva Engage, MyInsights, Veeva Suggestions, Call management, Surveys, territory management, and Veeva next best actions.</p>
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="section-title">
+                    <p class="eyebrow">Career</p>
+                    <h2>Professional experience</h2>
+                    <p>Eight years of building and improving Salesforce products across healthcare and life sciences.</p>
                 </div>
-                <div class="expertise-card">
-                    <h3>Veeva Vault</h3>
-                    <p>Proficient in implementing and customizing Veeva Vault solutions for life sciences clients, ensuring compliance and streamlined document management processes.</p>
-                </div>
-                <div class="expertise-card">
-                    <h3>Salesforce Development</h3>
-                    <p>Skilled in Apex, Lightning Web Components (LWC), Visualforce, Triggers, and Batch Classes to create custom Salesforce solutions tailored to client requirements.</p>
-                </div>
-                <div class="expertise-card">
-                    <h3>Cloud Integration</h3>
-                    <p>Experience in integrating Azure API Management with Salesforce, implementing Azure DevOps for streamlined change management, and working with AWS Lambda for enhanced functionality.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-title">
-                <h2>Professional Experience</h2>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Viatris</h3>
-                        <h4>Assistant Manager (Veeva Development) | Dec 2022 - Present</h4>
-                        <ul>
-                            <li>Spearheaded the adoption of Azure DevOps for streamlined change management and migration processes</li>
-                            <li>Worked on various Veeva modules including Account Management, Order Management, Approved Email, and more</li>
-                            <li>Integrated Azure API Management with Salesforce to load data in Veeva CRM Suggestion modules</li>
-                            <li>Developed custom Salesforce solutions using Apex, LWC, and Flow</li>
-                            <li>Engineered scheduled reports and jobs on surveys and call management</li>
-                            <li>Implemented Service Cloud and developed Apex sharing to save over $100,000 on service licenses</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Happiest Minds</h3>
-                        <h4>Senior Engineer (IMSS) - Veeva | March 2022 - Dec 2022</h4>
-                        <ul>
-                            <li>Worked as Support and Development engineer for Viatris, a Life Science Client</li>
-                            <li>Involved in resolving day-to-day tickets from EMEA, US regions</li>
-                            <li>Enhanced Veeva Application including triggers, batch classes, and functional changes</li>
-                            <li>Gathered requirements and designed solutions impacting over 1000 users across EMEA</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Accenture</h3>
-                        <h4>Application Development Analyst (Veeva CRM) | Aug 2018 - March 2022</h4>
-                        <ul>
-                            <li>Worked as System Administrator and Developer for Veeva CRM platform</li>
-                            <li>Created aura and lightning web components for migration from classic to lightning</li>
-                            <li>Implemented territory management for onboarding users from 160 different territories</li>
-                            <li>Developed VisualForce Pages and Apex Classes</li>
-                            <li>Introduced Remote Meeting Functionality during COVID lockdown</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-title">
-                <h2>Projects</h2>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3><a href="https://github.com/mayank9614/Alexa-Skill-Kit" target="_blank">Alexa Integration with Salesforce</a></h3>
-                        <p>Developed a custom Alexa skill that interacts with Salesforce APIs for record manipulation of account and order management. Implemented Multifactor Authentication using AWS Lambda and Salesforce API for scaling the Alexa skill with dynamic account linking.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">AWS Lambda</span>
-                            <span class="tech-tag">Salesforce API</span>
-                            <span class="tech-tag">OAUTH2</span>
+                <div class="timeline">
+                    <article class="timeline-item featured">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div><p class="company">Optum · UnitedHealth Group</p><h3>Software Engineering Lead</h3></div>
+                                <span class="date">Nov 2025 – Present</span>
+                            </div>
+                            <ul>
+                                <li>Leading the move to GitHub-based Salesforce CI/CD, reducing deployment time from one day to one hour—a 95.8% improvement.</li>
+                                <li>Designing Experience Cloud solutions with LWC and Aura for external portals supporting 300,000+ users.</li>
+                                <li>Built reusable parent-child and child-parent communication patterns that improve component maintainability and reuse.</li>
+                                <li>Implemented pagination and result optimization for data-heavy interfaces, improving responsiveness and user experience.</li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3>My Insights Dashboard Creation</h3>
-                        <p>Created reports and dashboards for territory and interactions summary insights. Developed filter-based charts to show values depending on record types using Angular.js libraries and Veeva APIs to fetch data from the application.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Angular</span>
-                            <span class="tech-tag">jQuery</span>
-                            <span class="tech-tag">Salesforce CLI</span>
-                            <span class="tech-tag">Veeva APIs</span>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div><p class="company">Viatris</p><h3>Assistant Manager – Veeva Development</h3></div>
+                                <span class="date">Dec 2022 – Nov 2025</span>
+                            </div>
+                            <ul>
+                                <li>Led Azure DevOps adoption for change management and release processes.</li>
+                                <li>Integrated Azure API Management with Salesforce to improve data exchange and interoperability.</li>
+                                <li>Built Apex, triggers, flows, batches, and LWCs for business-critical Salesforce solutions.</li>
+                                <li>Delivered dashboards and scheduled reporting used by data stewards across EMEA, North America, and ANZ.</li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3><a href="https://github.com/mayank9614/spotifyAPPMovieSearch" target="_blank">Spotify Movie Search App</a></h3>
-                        <p>Search for playlists related to movie names using a modern Spotify-inspired UI. Features responsive design, recent search history, error handling, and loading animations.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">Spotify API</span>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div><p class="company">Happiest Minds</p><h3>Senior Engineer</h3></div>
+                                <span class="date">Mar 2022 – Dec 2022</span>
+                            </div>
+                            <ul>
+                                <li>Handled support and enhancement work for Viatris across EMEA and US regions.</li>
+                                <li>Delivered Veeva enhancements across triggers, batches, profiles, permission sets, workflows, and Process Builders.</li>
+                                <li>Contributed to requirement gathering and solution design for changes affecting 1,000+ users.</li>
+                            </ul>
                         </div>
-                    </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div><p class="company">Accenture</p><h3>Application Development Analyst</h3></div>
+                                <span class="date">Aug 2018 – Mar 2022</span>
+                            </div>
+                            <ul>
+                                <li>Developed and supported Veeva CRM for a global life sciences client.</li>
+                                <li>Built Aura and LWC components during a Classic-to-Lightning migration.</li>
+                                <li>Created territory management capabilities for onboarding 1,000+ users across 160 territories.</li>
+                                <li>Helped deliver remote meeting functionality used at scale during the COVID lockdown.</li>
+                            </ul>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-title">
-                <h2>Technical Skills</h2>
-            </div>
-            <div class="skills-container">
-                <div class="skills-category">
-                    <h3>Languages & Frameworks</h3>
-                    <ul class="skills-list">
-                        <li>Apex</li>
-                        <li>JavaScript</li>
-                        <li>Lightning Web Components (LWC)</li>
-                        <li>Aura</li>
-                        <li>Visualforce</li>
-                        <li>Node.js</li>
-                        <li>Angular</li>
-                    </ul>
+        <section id="expertise" class="expertise">
+            <div class="container">
+                <div class="section-title">
+                    <p class="eyebrow">Expertise</p>
+                    <h2>What I bring to the platform</h2>
                 </div>
-                <div class="skills-category">
-                    <h3>Platforms & Tools</h3>
-                    <ul class="skills-list">
-                        <li>Salesforce</li>
-                        <li>Veeva CRM</li>
-                        <li>Veeva Vault</li>
-                        <li>Azure DevOps</li>
-                        <li>AWS Lambda</li>
-                        <li>Alexa Skill Kit</li>
-                        <li>Azure Functions</li>
-                        <li>Azure Logic Apps</li>
-                        <li>Azure Gateway</li>
-                    </ul>
-                </div>
-                <div class="skills-category">
-                    <h3>Methodologies</h3>
-                    <ul class="skills-list">
-                        <li>Agile</li>
-                        <li>Scrum</li>
-                    </ul>
+                <div class="expertise-grid">
+                    <article class="expertise-card"><span class="card-number">01</span><i class="fas fa-cloud" aria-hidden="true"></i><h3>Experience Cloud</h3><p>Scalable external portals built with reusable LWC and Aura patterns, optimized navigation, and responsive data experiences.</p></article>
+                    <article class="expertise-card"><span class="card-number">02</span><i class="fas fa-code" aria-hidden="true"></i><h3>Salesforce Engineering</h3><p>Apex, triggers, flows, Visualforce, batch processing, and scheduled jobs designed for maintainability and performance.</p></article>
+                    <article class="expertise-card"><span class="card-number">03</span><i class="fas fa-code-branch" aria-hidden="true"></i><h3>DevOps & Integrations</h3><p>GitHub CI/CD, Azure DevOps, REST APIs, Azure API Management, and Salesforce CLI for dependable delivery and interoperability.</p></article>
+                    <article class="expertise-card"><span class="card-number">04</span><i class="fas fa-capsules" aria-hidden="true"></i><h3>Veeva Platforms</h3><p>Deep Veeva CRM and Vault experience supporting regulated life sciences workflows, users, releases, and global operations.</p></article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Education & Achievements Section -->
-    <section id="education-achievements" class="education-achievements">
-        <div class="container">
-            <div class="section-title">
-                <h2>Education & Achievements</h2>
-            </div>
-            <div class="education-achievements-container">
-                <div class="education">
-                    <h3>Education</h3>
-                    <div class="education-item">
-                        <h4>B.E., BNM Institute of Technology</h4>
-                        <p>Graduated with 72%</p>
-                    </div>
-                    <div class="education-item">
-                        <h4>12th, MGM Higher Secondary School (CBSE)</h4>
-                        <p>Graduated with 83.6%</p>
-                    </div>
-                </div>
-                <div class="achievements">
-                    <h3>Achievements</h3>
-                    <div class="achievement-item">
-                        <p><strong>Young Champion Award:</strong> Awarded Young champion in Accenture Bengaluru campus for working on Alexa integration and handling LATAM region org single handedly</p>
-                    </div>
-                    <div class="achievement-item">
-                        <p><strong>Tech Innovation Award:</strong> One of the three groups to be selected for Accenture Bengaluru Campus tech innovation awards for Alexa integration</p>
-                    </div>
-                    <div class="achievement-item">
-                        <p><strong>Performer of the Month:</strong> Recognized by client as the Performer of the month</p>
-                    </div>
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-title"><p class="eyebrow">Selected work</p><h2>Projects with real impact</h2></div>
+                <div class="projects-grid">
+                    <article class="project-card project-featured">
+                        <div class="project-top"><span>Release engineering</span><i class="fas fa-arrow-trend-up" aria-hidden="true"></i></div>
+                        <h3>Salesforce CI/CD Modernization</h3>
+                        <p>Driving the migration of Salesforce release management to a GitHub-based CI/CD workflow, cutting deployment time from one day to one hour.</p>
+                        <div class="tech-stack"><span>GitHub</span><span>CI/CD</span><span>Salesforce CLI</span></div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-top"><span>Platform engineering</span><i class="fas fa-layer-group" aria-hidden="true"></i></div>
+                        <h3>Experience Cloud Engineering</h3>
+                        <p>Reusable portal components with robust communication patterns, pagination, and optimized result handling for an audience of 300,000+ users.</p>
+                        <div class="tech-stack"><span>Experience Cloud</span><span>LWC</span><span>Aura</span></div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-top"><span>Cloud integration</span><i class="fas fa-microphone-lines" aria-hidden="true"></i></div>
+                        <h3><a href="https://github.com/mayank9614/Alexa-Skill-Kit" target="_blank" rel="noopener noreferrer">Alexa Integration with Salesforce <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></h3>
+                        <p>A custom Alexa skill using Node.js, AWS Lambda, and Salesforce APIs for secure account and order management interactions.</p>
+                        <div class="tech-stack"><span>Node.js</span><span>AWS Lambda</span><span>Salesforce API</span></div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Interests & Reading Section -->
-    <section id="interests-reading" class="interests-reading">
-        <div class="container">
-            <div class="section-title">
-                <h2>Interests & Reading</h2>
-            </div>
-            <div class="interests-grid">
-                <div class="interest-card">
-                    <h3>My Reading List (Goodreads)</h3>
-                    <p>I mostly jump between Fiction and Non-Fiction, loving good stories and learning new things. My reading taste is pretty broad, mixing classics with more contemporary authors.</p>
-                    <a href="https://www.goodreads.com/review/list/24604910" class="btn btn-outline" target="_blank">View My Goodreads</a>
-                </div>
-                <div class="interest-card">
-                    <h3>AI/ML on Twitter</h3>
-                    <p>Diving deep into the latest in AI/ML research! Here is a list of people I follow.</p>
-                    <a href="https://x.com/anand_offbeat/lists" class="btn btn-outline" target="_blank">View My Twitter List</a>
+        <section id="skills" class="skills">
+            <div class="container skills-layout">
+                <div class="section-heading"><p class="eyebrow">Toolkit</p><h2>Skills across the Salesforce lifecycle</h2><p>From component architecture to deployment automation and enterprise integrations.</p></div>
+                <div class="skills-container">
+                    <div class="skills-category"><h3>Salesforce</h3><ul class="skills-list"><li>Apex</li><li>Triggers</li><li>Flows</li><li>LWC</li><li>Aura</li><li>Visualforce</li><li>Batch Apex</li><li>Scheduled Jobs</li><li>Experience Cloud</li></ul></div>
+                    <div class="skills-category"><h3>DevOps & Integration</h3><ul class="skills-list"><li>GitHub</li><li>CI/CD</li><li>REST APIs</li><li>Azure DevOps</li><li>Azure API Management</li><li>Salesforce CLI</li></ul></div>
+                    <div class="skills-category"><h3>Tools & Platforms</h3><ul class="skills-list"><li>Veeva CRM</li><li>Veeva Vault</li><li>AWS Lambda</li><li>Alexa Skill Kit</li></ul></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Contact Me</h2>
-            </div>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Get In Touch</h3>
-                    <p>Feel free to reach out to me for any opportunities or collaborations in Salesforce and Veeva development.</p>
-                    <div class="contact-links">
-                        <a href="https://www.linkedin.com/in/mayank-anand-11911469/" class="contact-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/mayank9614" class="contact-link" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="mailto:mayank.96anand@gmail.com" class="contact-link"><i class="fas fa-envelope"></i></a>
-                    </div>                    
-                    <div class="download-resume">
-                        <a href="Mayank_resume.pdf" class="btn" download>Download Resume</a>
+        <section id="education-achievements" class="education-achievements">
+            <div class="container">
+                <div class="section-title"><p class="eyebrow">Background</p><h2>Education & recognition</h2></div>
+                <div class="education-achievements-container">
+                    <div class="education panel">
+                        <h3>Education</h3>
+                        <div class="education-item"><span>B.E.</span><div><h4>BNM Institute of Technology</h4><p>72%</p></div></div>
+                        <div class="education-item"><span>12</span><div><h4>MGM Higher Secondary School</h4><p>CBSE · 83.6%</p></div></div>
+                        <div class="education-item"><span>10</span><div><h4>The Jaintpur Public School</h4><p>CBSE · 9.6 CGPA</p></div></div>
+                    </div>
+                    <div class="achievements panel">
+                        <h3>Recognition</h3>
+                        <div class="achievement-item"><i class="fas fa-trophy" aria-hidden="true"></i><p><strong>Young Champion Award</strong><br>Accenture Bengaluru recognition for Alexa integration and independently supporting the LATAM region.</p></div>
+                        <div class="achievement-item"><i class="fas fa-lightbulb" aria-hidden="true"></i><p><strong>Tech Innovation Award</strong><br>Selected among three teams for the Accenture Bengaluru campus innovation awards.</p></div>
+                        <div class="achievement-item"><i class="fas fa-star" aria-hidden="true"></i><p><strong>Performer of the Month</strong><br>Recognized by the client for delivery and impact.</p></div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Mayank. All Rights Reserved.</p>
-                <p>Salesforce & Veeva Developer</p>
+        <section id="interests-reading" class="interests-reading">
+            <div class="container">
+                <div class="section-title"><p class="eyebrow">Beyond work</p><h2>Curious by default</h2></div>
+                <div class="interests-grid">
+                    <a class="interest-card" href="https://www.goodreads.com/review/list/24604910" target="_blank" rel="noopener noreferrer"><i class="fas fa-book-open" aria-hidden="true"></i><div><h3>Reading</h3><p>Fiction, non-fiction, classics, and contemporary ideas on Goodreads.</p></div><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    <a class="interest-card" href="https://x.com/anand_offbeat/lists" target="_blank" rel="noopener noreferrer"><i class="fas fa-brain" aria-hidden="true"></i><div><h3>AI & ML</h3><p>Following researchers and builders shaping the next generation of technology.</p></div><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
             </div>
-        </div>
-    </footer>
+        </section>
 
+        <section id="contact" class="contact">
+            <div class="container contact-card">
+                <div><p class="eyebrow">Get in touch</p><h2>Let’s build something useful.</h2><p>I’m always happy to discuss Salesforce engineering, Experience Cloud, platform modernization, and thoughtful product delivery.</p></div>
+                <div class="contact-actions"><a href="mailto:mayank.96anand@gmail.com" class="btn btn-light"><i class="fas fa-envelope" aria-hidden="true"></i> Email me</a><a href="Mayank_resume.pdf" class="text-link" download>Download resume <i class="fas fa-download" aria-hidden="true"></i></a></div>
+                <div class="contact-links" aria-label="Social profiles">
+                    <a href="https://www.linkedin.com/in/mayank-anand-11911469/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="https://github.com/mayank9614" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="tel:+918867645287" aria-label="Call Mayank Anand"><i class="fas fa-phone" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer><div class="container footer-content"><p>&copy; <span id="current-year">2026</span> Mayank Anand</p><p>Designed around clarity, scale, and Salesforce blue.</p></div></footer>
     <script src="js/script.js"></script>
 </body>
 </html>
