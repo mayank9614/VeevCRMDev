@@ -31,6 +31,48 @@ document.addEventListener('DOMContentLoaded', () => {
         if (window.innerWidth > 800) closeMenu();
     });
 
+    const careerTabs = [...document.querySelectorAll('[data-career-target]')];
+    const careerPanels = [...document.querySelectorAll('.career-panel')];
+
+    const showCareerChapter = (selectedTab, moveFocus = false) => {
+        const targetId = selectedTab?.dataset.careerTarget;
+        if (!targetId) return;
+
+        careerTabs.forEach((tab) => {
+            const isSelected = tab === selectedTab;
+            tab.classList.toggle('active', isSelected);
+            tab.setAttribute('aria-selected', String(isSelected));
+            tab.setAttribute('tabindex', isSelected ? '0' : '-1');
+        });
+
+        careerPanels.forEach((panel) => {
+            const isSelected = panel.id === targetId;
+            panel.hidden = !isSelected;
+            panel.classList.toggle('active', isSelected);
+        });
+
+        if (moveFocus) {
+            selectedTab.focus();
+            selectedTab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        }
+    };
+
+    careerTabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => showCareerChapter(tab));
+        tab.addEventListener('keydown', (event) => {
+            let nextIndex;
+
+            if (event.key === 'ArrowDown' || event.key === 'ArrowRight') nextIndex = (index + 1) % careerTabs.length;
+            if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') nextIndex = (index - 1 + careerTabs.length) % careerTabs.length;
+            if (event.key === 'Home') nextIndex = 0;
+            if (event.key === 'End') nextIndex = careerTabs.length - 1;
+            if (nextIndex === undefined) return;
+
+            event.preventDefault();
+            showCareerChapter(careerTabs[nextIndex], true);
+        });
+    });
+
     const scrollTopButton = document.createElement('button');
     scrollTopButton.className = 'scroll-top-btn';
     scrollTopButton.type = 'button';
@@ -50,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const revealElements = document.querySelectorAll(
-        '.timeline-item, .expertise-card, .project-card, .skills-category, .panel, .interest-card'
+        '.career-explorer, .expertise-card, .project-card, .skills-category, .panel, .interest-card'
     );
 
     if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {

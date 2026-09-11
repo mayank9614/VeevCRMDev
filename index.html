@@ -85,69 +85,49 @@
             <div class="container">
                 <div class="section-title">
                     <p class="eyebrow">Career</p>
-                    <h2>Professional experience</h2>
-                    <p>Eight years of building and improving Salesforce products across healthcare and life sciences.</p>
+                    <h2>Four chapters, one through-line.</h2>
+                    <p>I have spent eight years making Salesforce products easier to use, change, and ship. Pick a chapter to see what that looked like in practice.</p>
                 </div>
-                <div class="timeline">
-                    <article class="timeline-item featured">
-                        <div class="timeline-marker" aria-hidden="true"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <div><p class="company">Optum · UnitedHealth Group</p><h3>Software Engineering Lead</h3></div>
-                                <span class="date">Nov 2025 – Present</span>
-                            </div>
-                            <ul>
-                                <li>Leading the move to GitHub-based Salesforce CI/CD, reducing deployment time from one day to one hour—a 95.8% improvement.</li>
-                                <li>Designing Experience Cloud solutions with LWC and Aura for external portals supporting 300,000+ users.</li>
-                                <li>Built reusable parent-child and child-parent communication patterns that improve component maintainability and reuse.</li>
-                                <li>Implemented pagination and result optimization for data-heavy interfaces, improving responsiveness and user experience.</li>
-                            </ul>
+                <div class="career-explorer">
+                    <aside class="career-index">
+                        <div class="career-index-intro"><span>Career chapters</span><p>Choose where to start.</p></div>
+                        <div class="career-tabs" role="tablist" aria-label="Professional experience" aria-orientation="vertical">
+                            <button class="career-tab active" id="career-tab-optum" type="button" role="tab" aria-selected="true" aria-controls="career-panel-optum" data-career-target="career-panel-optum"><span class="career-tab-year">Now</span><span><strong>Optum</strong><small>Software Engineering Lead</small></span></button>
+                            <button class="career-tab" id="career-tab-viatris" type="button" role="tab" aria-selected="false" aria-controls="career-panel-viatris" tabindex="-1" data-career-target="career-panel-viatris"><span class="career-tab-year">2022</span><span><strong>Viatris</strong><small>Assistant Manager</small></span></button>
+                            <button class="career-tab" id="career-tab-happiest" type="button" role="tab" aria-selected="false" aria-controls="career-panel-happiest" tabindex="-1" data-career-target="career-panel-happiest"><span class="career-tab-year">2022</span><span><strong>Happiest Minds</strong><small>Senior Engineer</small></span></button>
+                            <button class="career-tab" id="career-tab-accenture" type="button" role="tab" aria-selected="false" aria-controls="career-panel-accenture" tabindex="-1" data-career-target="career-panel-accenture"><span class="career-tab-year">2018</span><span><strong>Accenture</strong><small>Development Analyst</small></span></button>
                         </div>
-                    </article>
-                    <article class="timeline-item">
-                        <div class="timeline-marker" aria-hidden="true"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <div><p class="company">Viatris</p><h3>Assistant Manager – Veeva Development</h3></div>
-                                <span class="date">Dec 2022 – Nov 2025</span>
-                            </div>
-                            <ul>
-                                <li>Led Azure DevOps adoption for change management and release processes.</li>
-                                <li>Integrated Azure API Management with Salesforce to improve data exchange and interoperability.</li>
-                                <li>Built Apex, triggers, flows, batches, and LWCs for business-critical Salesforce solutions.</li>
-                                <li>Delivered dashboards and scheduled reporting used by data stewards across EMEA, North America, and ANZ.</li>
-                            </ul>
-                        </div>
-                    </article>
-                    <article class="timeline-item">
-                        <div class="timeline-marker" aria-hidden="true"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <div><p class="company">Happiest Minds</p><h3>Senior Engineer</h3></div>
-                                <span class="date">Mar 2022 – Dec 2022</span>
-                            </div>
-                            <ul>
-                                <li>Handled support and enhancement work for Viatris across EMEA and US regions.</li>
-                                <li>Delivered Veeva enhancements across triggers, batches, profiles, permission sets, workflows, and Process Builders.</li>
-                                <li>Contributed to requirement gathering and solution design for changes affecting 1,000+ users.</li>
-                            </ul>
-                        </div>
-                    </article>
-                    <article class="timeline-item">
-                        <div class="timeline-marker" aria-hidden="true"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <div><p class="company">Accenture</p><h3>Application Development Analyst</h3></div>
-                                <span class="date">Aug 2018 – Mar 2022</span>
-                            </div>
-                            <ul>
-                                <li>Developed and supported Veeva CRM for a global life sciences client.</li>
-                                <li>Built Aura and LWC components during a Classic-to-Lightning migration.</li>
-                                <li>Created territory management capabilities for onboarding 1,000+ users across 160 territories.</li>
-                                <li>Helped deliver remote meeting functionality used at scale during the COVID lockdown.</li>
-                            </ul>
-                        </div>
-                    </article>
+                    </aside>
+
+                    <div class="career-stage" aria-live="polite">
+                        <article class="career-panel active" id="career-panel-optum" role="tabpanel" aria-labelledby="career-tab-optum">
+                            <header class="career-panel-header"><div><p class="career-kicker"><span>Current chapter</span> Optum &middot; UnitedHealth Group</p><h3>Making large Salesforce systems easier to ship and use.</h3></div><p class="career-tenure">Nov 2025 &ndash; Present</p></header>
+                            <p class="career-story">I lead the engineering work behind healthcare portal experiences, balancing a very large user base with the everyday reality of helping teams release safely and quickly.</p>
+                            <div class="career-result"><strong>1 day &rarr; 1 hour</strong><span>Salesforce deployment time after moving delivery to a GitHub-based CI/CD workflow.</span></div>
+                            <div class="career-notes"><div><h4>What I am working on</h4><ul><li>Experience Cloud interfaces supporting more than 300,000 users.</li><li>Reusable LWC and Aura communication patterns that teams can extend confidently.</li><li>Faster data-heavy screens through pagination and result optimization.</li></ul></div><div><h4>Working toolkit</h4><div class="career-tools"><span>Experience Cloud</span><span>LWC</span><span>Aura</span><span>GitHub Actions</span><span>CI/CD</span></div></div></div>
+                        </article>
+
+                        <article class="career-panel" id="career-panel-viatris" role="tabpanel" aria-labelledby="career-tab-viatris" hidden>
+                            <header class="career-panel-header"><div><p class="career-kicker">Viatris</p><h3>Connecting regulated CRM work with a more dependable delivery process.</h3></div><p class="career-tenure">Dec 2022 &ndash; Nov 2025</p></header>
+                            <p class="career-story">This chapter moved me from building individual Salesforce features to shaping how changes travelled from an idea into production across global teams.</p>
+                            <div class="career-result"><strong>3 regions</strong><span>Reporting and scheduled insights delivered for data stewards across EMEA, North America, and ANZ.</span></div>
+                            <div class="career-notes"><div><h4>What changed</h4><ul><li>Introduced Azure DevOps for change management and release workflows.</li><li>Connected Azure API Management with Salesforce for cleaner data exchange.</li><li>Delivered Apex, triggers, flows, batches, and LWCs for critical business processes.</li></ul></div><div><h4>Working toolkit</h4><div class="career-tools"><span>Veeva CRM</span><span>Azure DevOps</span><span>API Management</span><span>Apex</span><span>LWC</span></div></div></div>
+                        </article>
+
+                        <article class="career-panel" id="career-panel-happiest" role="tabpanel" aria-labelledby="career-tab-happiest" hidden>
+                            <header class="career-panel-header"><div><p class="career-kicker">Happiest Minds</p><h3>Turning support conversations into durable product improvements.</h3></div><p class="career-tenure">Mar 2022 &ndash; Dec 2022</p></header>
+                            <p class="career-story">Working closely with regional teams made the human side of platform work very clear: the best enhancement is the one that solves the real support problem without creating the next one.</p>
+                            <div class="career-result"><strong>1,000+ users</strong><span>Requirements and solution design shaped around changes affecting a large, distributed user community.</span></div>
+                            <div class="career-notes"><div><h4>What I contributed</h4><ul><li>Supported and enhanced Viatris platforms across EMEA and the United States.</li><li>Delivered triggers, batches, profiles, permission sets, and workflow changes.</li><li>Worked from requirement discovery through solution design and release.</li></ul></div><div><h4>Working toolkit</h4><div class="career-tools"><span>Veeva CRM</span><span>Salesforce</span><span>Apex</span><span>Workflows</span><span>Access Control</span></div></div></div>
+                        </article>
+
+                        <article class="career-panel" id="career-panel-accenture" role="tabpanel" aria-labelledby="career-tab-accenture" hidden>
+                            <header class="career-panel-header"><div><p class="career-kicker">Accenture</p><h3>Building the foundation: CRM development at global scale.</h3></div><p class="career-tenure">Aug 2018 &ndash; Mar 2022</p></header>
+                            <p class="career-story">My first major chapter was hands-on and broad: modernizing interfaces, supporting global life-sciences teams, and learning how thoughtful platform work changes daily routines for real users.</p>
+                            <div class="career-result"><strong>160 territories</strong><span>Territory-management capabilities that helped onboard more than 1,000 users.</span></div>
+                            <div class="career-notes"><div><h4>What I built</h4><ul><li>Aura and LWC components for a Classic-to-Lightning migration.</li><li>Veeva CRM features for a global life-sciences organization.</li><li>Remote-meeting functionality used at scale during the COVID lockdown.</li></ul></div><div><h4>Working toolkit</h4><div class="career-tools"><span>Veeva CRM</span><span>Aura</span><span>LWC</span><span>Salesforce Classic</span><span>Lightning</span></div></div></div>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>

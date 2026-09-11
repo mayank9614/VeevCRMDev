@@ -418,110 +418,261 @@ h2 {
 }
 
 .experience {
-  background: var(--surface-soft);
+  background: #edf5fb;
+  overflow: hidden;
 }
 
-.timeline {
-  margin: 0 auto;
-  max-width: 940px;
-  position: relative;
+.experience .section-title {
+  margin-left: 0;
+  max-width: 760px;
+  text-align: left;
 }
 
-.timeline::before {
-  background: #bfdcf4;
-  bottom: 0;
-  content: "";
-  left: 8px;
-  position: absolute;
-  top: 16px;
-  width: 2px;
-}
-
-.timeline-item {
-  padding: 0 0 30px 48px;
-  position: relative;
-}
-
-.timeline-marker {
+.career-explorer {
   background: #fff;
-  border: 4px solid var(--salesforce-blue);
-  border-radius: 50%;
-  height: 18px;
-  left: 0;
-  position: absolute;
-  top: 30px;
-  width: 18px;
-  z-index: 1;
+  border: 1px solid #cdddea;
+  border-radius: 28px;
+  box-shadow: 0 28px 70px rgba(3, 45, 96, 0.13);
+  display: grid;
+  grid-template-columns: minmax(270px, 0.78fr) minmax(0, 1.8fr);
+  min-height: 610px;
+  overflow: hidden;
 }
 
-.timeline-content {
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
-  padding: 30px 34px;
-  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+.career-index {
+  background: var(--salesforce-navy);
+  color: #fff;
+  padding: 34px 0;
 }
 
-.timeline-content:hover {
-  border-color: #9cccf2;
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-3px);
+.career-index-intro {
+  padding: 0 28px 26px;
 }
 
-.featured .timeline-content {
-  border-left: 5px solid var(--salesforce-blue);
+.career-index-intro span {
+  color: #8ed2ff;
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
-.timeline-header {
+.career-index-intro p {
+  color: #d7ebfb;
+  font-size: 0.86rem;
+  margin-top: 5px;
+}
+
+.career-tabs {
+  display: grid;
+}
+
+.career-tab {
+  align-items: start;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  cursor: pointer;
+  display: grid;
+  font: inherit;
+  gap: 13px;
+  grid-template-columns: 48px 1fr;
+  padding: 20px 28px;
+  text-align: left;
+  transition: background-color var(--transition), box-shadow var(--transition);
+}
+
+.career-tab:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.career-tab:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.career-tab.active {
+  background: linear-gradient(90deg, rgba(1, 118, 211, 0.55), rgba(1, 118, 211, 0.12));
+  box-shadow: inset 4px 0 #5fc3ff;
+}
+
+.career-tab:focus-visible {
+  outline-color: #8ed2ff;
+  outline-offset: -5px;
+}
+
+.career-tab-year {
+  color: #8ed2ff;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding-top: 3px;
+  text-transform: uppercase;
+}
+
+.career-tab strong,
+.career-tab small {
+  display: block;
+}
+
+.career-tab strong {
+  color: #fff;
+  font-size: 0.94rem;
+  line-height: 1.35;
+}
+
+.career-tab small {
+  color: #b9d4e9;
+  font-size: 0.7rem;
+  line-height: 1.5;
+  margin-top: 3px;
+}
+
+.career-stage {
+  align-items: center;
+  display: flex;
+  padding: clamp(34px, 5vw, 66px);
+}
+
+.career-panel {
+  animation: career-panel-in 360ms ease both;
+  width: 100%;
+}
+
+.career-panel[hidden] {
+  display: none;
+}
+
+@keyframes career-panel-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.career-panel-header {
   align-items: flex-start;
   display: flex;
-  gap: 24px;
+  gap: 30px;
   justify-content: space-between;
-  margin-bottom: 19px;
 }
 
-.company {
+.career-kicker {
   color: var(--salesforce-blue-dark);
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.1em;
-  margin-bottom: 7px;
+  margin-bottom: 12px;
   text-transform: uppercase;
 }
 
-.timeline-content h3 {
-  font-size: 1.35rem;
-}
-
-.date {
-  background: var(--salesforce-cloud);
+.career-kicker span {
+  background: #dff4e7;
   border-radius: 999px;
-  color: var(--salesforce-blue-dark);
-  flex-shrink: 0;
-  font-size: 0.73rem;
-  font-weight: 800;
-  padding: 7px 12px;
+  color: #08783e;
+  display: inline-block;
+  letter-spacing: 0.05em;
+  margin-right: 8px;
+  padding: 4px 8px;
 }
 
-.timeline-content ul {
+.career-panel-header h3 {
+  font-size: clamp(1.75rem, 3vw, 2.55rem);
+  letter-spacing: -0.035em;
+  max-width: 650px;
+}
+
+.career-tenure {
+  border-left: 2px solid #b5d9f5;
+  color: var(--muted);
+  flex: 0 0 120px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1.45;
+  padding-left: 13px;
+}
+
+.career-story {
+  color: #465766;
+  font-size: 1rem;
+  margin-top: 24px;
+  max-width: 780px;
+}
+
+.career-result {
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+  display: grid;
+  gap: 24px;
+  grid-template-columns: minmax(150px, auto) 1fr;
+  margin: 30px 0;
+  padding: 22px 0;
+}
+
+.career-result strong {
+  color: var(--salesforce-blue);
+  font-size: clamp(1.45rem, 3vw, 2.05rem);
+  letter-spacing: -0.04em;
+  white-space: nowrap;
+}
+
+.career-result span {
+  color: #465766;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.career-notes {
+  display: grid;
+  gap: clamp(30px, 5vw, 56px);
+  grid-template-columns: minmax(0, 1.4fr) minmax(180px, 0.7fr);
+}
+
+.career-notes h4 {
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 13px;
+  text-transform: uppercase;
+}
+
+.career-notes ul {
   color: #465766;
   display: grid;
-  gap: 10px;
+  gap: 8px;
   list-style: none;
 }
 
-.timeline-content li {
-  padding-left: 22px;
+.career-notes li {
+  font-size: 0.87rem;
+  padding-left: 18px;
   position: relative;
 }
 
-.timeline-content li::before {
-  color: var(--salesforce-blue);
-  content: "→";
-  font-weight: 800;
+.career-notes li::before {
+  background: var(--salesforce-blue);
+  border-radius: 50%;
+  content: "";
+  height: 5px;
   left: 0;
   position: absolute;
+  top: 0.72em;
+  width: 5px;
+}
+
+.career-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.career-tools span {
+  background: var(--salesforce-cloud);
+  border-radius: 7px;
+  color: var(--salesforce-blue-dark);
+  font-size: 0.67rem;
+  font-weight: 800;
+  padding: 6px 9px;
 }
 
 .expertise {
@@ -1116,6 +1267,52 @@ footer {
     left: calc(50% - 180px);
   }
 
+  .career-explorer {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .career-index {
+    padding: 24px 0 0;
+  }
+
+  .career-index-intro {
+    align-items: baseline;
+    display: flex;
+    gap: 12px;
+    padding: 0 24px 18px;
+  }
+
+  .career-index-intro p {
+    margin-top: 0;
+  }
+
+  .career-tabs {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-color: #5fc3ff transparent;
+    scrollbar-width: thin;
+    scroll-snap-type: x proximity;
+  }
+
+  .career-tab {
+    border-bottom: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    flex: 0 0 230px;
+    padding: 17px 20px;
+    scroll-snap-align: start;
+  }
+
+  .career-tab.active {
+    box-shadow: inset 0 -4px #5fc3ff;
+  }
+
+  .career-stage {
+    align-items: flex-start;
+    min-height: 540px;
+    padding: 40px;
+  }
+
   .projects-grid,
   .education-achievements-container,
   .interests-grid {
@@ -1210,22 +1407,72 @@ footer {
     min-height: 245px;
   }
 
-  .timeline-item {
-    padding-left: 34px;
+  .experience .section-title {
+    margin-bottom: 38px;
   }
 
-  .timeline-content {
-    padding: 24px 20px;
+  .career-explorer {
+    border-radius: 20px;
   }
 
-  .timeline-header {
+  .career-index-intro {
     align-items: flex-start;
     flex-direction: column;
-    gap: 12px;
+    gap: 0;
+    padding-inline: 20px;
   }
 
-  .timeline-content li {
-    font-size: 0.88rem;
+  .career-tab {
+    gap: 3px;
+    grid-template-columns: 1fr;
+    min-width: 184px;
+    padding: 15px 18px;
+  }
+
+  .career-tab-year {
+    padding-top: 0;
+  }
+
+  .career-stage {
+    min-height: 650px;
+    padding: 30px 21px;
+  }
+
+  .career-panel-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .career-panel-header h3 {
+    font-size: 1.75rem;
+  }
+
+  .career-tenure {
+    border-left: 0;
+    border-top: 2px solid #b5d9f5;
+    flex-basis: auto;
+    padding-left: 0;
+    padding-top: 8px;
+  }
+
+  .career-story {
+    font-size: 0.93rem;
+  }
+
+  .career-result {
+    gap: 5px;
+    grid-template-columns: 1fr;
+    margin-block: 24px;
+    padding-block: 18px;
+  }
+
+  .career-notes {
+    gap: 24px;
+    grid-template-columns: 1fr;
+  }
+
+  .career-notes li {
+    font-size: 0.82rem;
   }
 
   .project-card {
