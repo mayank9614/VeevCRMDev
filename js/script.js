@@ -23,6 +23,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
     navItems.forEach((item) => item.addEventListener('click', closeMenu));
 
+    const platformTabs = [...document.querySelectorAll('[data-platform]')];
+    const selectPlatform = (selectedTab, focus = false) => {
+        platformTabs.forEach((tab) => {
+            const selected = tab === selectedTab;
+            tab.classList.toggle('active', selected);
+            tab.setAttribute('aria-selected', String(selected));
+            tab.tabIndex = selected ? 0 : -1;
+            document.getElementById(tab.dataset.platform).hidden = !selected;
+        });
+        document.querySelector('#experience').classList.toggle('zoho-selected', selectedTab.dataset.platform === 'zoho');
+        if (focus) selectedTab.focus();
+    };
+    platformTabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => selectPlatform(tab));
+        tab.addEventListener('keydown', (event) => {
+            let next;
+            if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') next = 1 - index;
+            if (event.key === 'Home') next = 0;
+            if (event.key === 'End') next = platformTabs.length - 1;
+            if (next === undefined) return;
+            event.preventDefault();
+            selectPlatform(platformTabs[next], true);
+        });
+    });
+    const openZohoLink = () => {
+        if (window.location.hash !== '#zoho') return;
+        selectPlatform(document.getElementById('platform-zoho'));
+        document.getElementById('experience').scrollIntoView({ block: 'start' });
+    };
+    document.querySelector('a[href="#zoho"]')?.addEventListener('click', () => {
+        selectPlatform(document.getElementById('platform-zoho'));
+    });
+    window.addEventListener('hashchange', openZohoLink);
+    openZohoLink();
+
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') closeMenu();
     });

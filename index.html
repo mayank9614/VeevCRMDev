@@ -26,6 +26,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#zoho">Zoho</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -85,9 +86,14 @@
             <div class="container">
                 <div class="section-title">
                     <p class="eyebrow">Career</p>
-                    <h2>Four chapters, one through-line.</h2>
-                    <p>I have spent eight years making Salesforce products easier to use, change, and ship. Pick a chapter to see what that looked like in practice.</p>
+                    <h2>Explore my platform experience.</h2>
+                    <p>From Salesforce engineering to customized Zoho solutions. Choose a platform to explore my experience and capabilities.</p>
                 </div>
+                <div class="platform-switch" role="tablist" aria-label="Choose experience platform">
+                    <button id="platform-salesforce" class="platform-tab active" type="button" role="tab" aria-selected="true" aria-controls="salesforce-experience" data-platform="salesforce-experience">Salesforce</button>
+                    <button id="platform-zoho" class="platform-tab" type="button" role="tab" aria-selected="false" aria-controls="zoho" tabindex="-1" data-platform="zoho">Zoho</button>
+                </div>
+                <div id="salesforce-experience" class="experience-panel" role="tabpanel" aria-labelledby="platform-salesforce">
                 <div class="career-explorer">
                     <aside class="career-index">
                         <div class="career-index-intro"><span>Career chapters</span><p>Choose where to start.</p></div>
@@ -129,6 +135,43 @@
                         </article>
                     </div>
                 </div>
+                </div>
+        <div id="zoho" class="zoho experience-panel" role="tabpanel" aria-labelledby="platform-zoho" hidden>
+            <div class="zoho-content">
+                <div class="zoho-intro">
+                    <div class="section-heading">
+                        <p class="eyebrow">Zoho Experience</p>
+                        <h2 id="zoho-heading">Connected apps.<br>Simpler everyday work.</h2>
+                    </div>
+                    <div class="zoho-summary">
+                        <p class="lead">I build customized business solutions across the Zoho ecosystem, turning business requirements into scalable, user-friendly systems.</p>
+                        <p>From configuring Zoho CRM and developing Creator applications to automating workflows with Deluge, I connect processes that help teams reduce manual work, improve data accuracy, and keep operations moving.</p>
+                    </div>
+                </div>
+                <div class="zoho-capabilities" aria-label="Core Zoho capabilities">
+                    <article class="zoho-capability">
+                        <span class="zoho-icon"><i class="fas fa-sliders" aria-hidden="true"></i></span>
+                        <div><h3>CRM built around the business</h3><p>Zoho CRM customization and administration, with custom modules, fields, and layouts tailored to how teams work.</p><ul><li>Blueprint and approval processes</li><li>Validation rules and data quality controls</li></ul></div>
+                    </article>
+                    <article class="zoho-capability">
+                        <span class="zoho-icon"><i class="fas fa-code" aria-hidden="true"></i></span>
+                        <div><h3>Custom apps &amp; automation</h3><p>Zoho Creator applications and Deluge scripts that turn business requirements into practical tools and automated workflows.</p><ul><li>Custom functions and workflow automation</li><li>Process optimization and user-friendly applications</li></ul></div>
+                    </article>
+                    <article class="zoho-capability">
+                        <span class="zoho-icon"><i class="fas fa-plug" aria-hidden="true"></i></span>
+                        <div><h3>Integrations that keep data in sync</h3><p>REST APIs and webhooks connecting Zoho applications with third-party platforms for consistent data across systems.</p><ul><li>Zoho Books, Desk, Forms, and Flow integrations</li><li>Data migration, cleansing, and synchronization</li></ul></div>
+                    </article>
+                    <article class="zoho-capability">
+                        <span class="zoho-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></span>
+                        <div><h3>Insights &amp; dependable delivery</h3><p>Reports, dashboards, and analytics that make business data useful, backed by hands-on troubleshooting and support.</p><ul><li>Requirement analysis and solution design</li><li>Testing, deployment, and ongoing support</li></ul></div>
+                    </article>
+                </div>
+                <div class="zoho-toolkit">
+                    <h3>My Zoho toolkit</h3>
+                    <ul class="skills-list" aria-label="Zoho tools and technologies"><li>Zoho CRM</li><li>Zoho Creator</li><li>Deluge</li><li>Zoho Books</li><li>Zoho Desk</li><li>Zoho Forms</li><li>Zoho Flow</li><li>REST APIs</li><li>Webhooks</li></ul>
+                </div>
+            </div>
+        </div>
             </div>
         </section>
 

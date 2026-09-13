@@ -725,6 +725,187 @@ h2 {
   font-size: 0.9rem;
 }
 
+.zoho {
+  --salesforce-cloud: #eef6ff;
+  --salesforce-blue: #1974d2;
+  --salesforce-blue-dark: #155da8;
+  --salesforce-navy: #202b3a;
+  --border: #e0e5e8;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: clamp(22px, 4vw, 48px);
+  border-top: 5px solid #e53935;
+}
+
+.experience-panel[hidden] {
+  display: none;
+}
+
+.platform-switch {
+  display: inline-flex;
+  gap: 6px;
+  padding: 6px;
+  margin-bottom: 32px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+
+.platform-tab {
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+  padding: 10px 28px;
+}
+
+.platform-tab.active {
+  background: var(--salesforce-blue);
+  color: #fff;
+}
+
+.platform-tab[data-platform="zoho"].active {
+  background: #bc2724;
+}
+
+.experience.zoho-selected {
+  background: linear-gradient(135deg, #fff8ef, #f1f8f4 65%, #eef6ff);
+}
+
+.zoho .eyebrow {
+  color: #bc2724;
+}
+
+.zoho-capability:nth-child(1) .zoho-icon {
+  background: #ffeded;
+  color: #bc2724;
+}
+
+.zoho-capability:nth-child(2) .zoho-icon {
+  background: #e7f6ed;
+  color: #18753c;
+}
+
+.zoho-capability:nth-child(4) .zoho-icon {
+  background: #fff5cf;
+  color: #826000;
+}
+
+.zoho-intro {
+  display: grid;
+  gap: 60px;
+  grid-template-columns: 1fr 1.1fr;
+  margin-bottom: 44px;
+}
+
+.zoho-summary p {
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.zoho-summary .lead {
+  color: var(--salesforce-navy);
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.zoho-capabilities {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  overflow: hidden;
+}
+
+.zoho-capability {
+  display: flex;
+  gap: 20px;
+  padding: 34px;
+}
+
+.zoho-capability:nth-child(odd) {
+  border-right: 1px solid var(--border);
+}
+
+.zoho-capability:nth-child(n + 3) {
+  border-top: 1px solid var(--border);
+}
+
+.zoho-icon {
+  align-items: center;
+  background: var(--salesforce-cloud);
+  border-radius: var(--radius-sm);
+  color: var(--salesforce-blue-dark);
+  display: flex;
+  flex: 0 0 44px;
+  height: 44px;
+  justify-content: center;
+}
+
+.zoho-capability h3 {
+  font-size: 1.15rem;
+  margin-bottom: 14px;
+}
+
+.zoho-capability p,
+.zoho-capability ul {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.zoho-capability ul {
+  margin-top: 14px;
+  padding-left: 18px;
+}
+
+.zoho-capability li + li {
+  margin-top: 5px;
+}
+
+.zoho-capability li::marker {
+  color: var(--salesforce-blue);
+}
+
+.zoho-toolkit {
+  margin-top: 30px;
+}
+
+.zoho-toolkit h3 {
+  font-size: 0.85rem;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 800px) {
+  .zoho-intro,
+  .zoho-capabilities {
+    grid-template-columns: 1fr;
+  }
+
+  .zoho-intro {
+    gap: 24px;
+    margin-bottom: 28px;
+  }
+
+  .zoho-capability {
+    gap: 16px;
+    padding: 26px 22px;
+  }
+
+  .zoho-capability:nth-child(odd) {
+    border-right: 0;
+  }
+
+  .zoho-capability + .zoho-capability {
+    border-top: 1px solid var(--border);
+  }
+}
+
 .projects {
   background: var(--salesforce-navy);
 }
