@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navItems.forEach((item) => item.addEventListener('click', closeMenu));
 
     const platformTabs = [...document.querySelectorAll('[data-platform]')];
+    const experienceToggle = document.getElementById('experience-toggle');
     const selectPlatform = (selectedTab, focus = false) => {
         platformTabs.forEach((tab) => {
             const selected = tab === selectedTab;
@@ -33,8 +34,16 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById(tab.dataset.platform).hidden = !selected;
         });
         document.querySelector('#experience').classList.toggle('zoho-selected', selectedTab.dataset.platform === 'zoho');
+        experienceToggle?.setAttribute('aria-checked', String(selectedTab.dataset.platform === 'zoho'));
         if (focus) selectedTab.focus();
     };
+    experienceToggle?.addEventListener('click', () => {
+        const showZoho = experienceToggle.getAttribute('aria-checked') !== 'true';
+        selectPlatform(document.getElementById(showZoho ? 'platform-zoho' : 'platform-salesforce'));
+        closeMenu();
+        history.replaceState(null, '', showZoho ? '#zoho' : '#experience');
+        document.getElementById('experience').scrollIntoView({ block: 'start' });
+    });
     platformTabs.forEach((tab, index) => {
         tab.addEventListener('click', () => selectPlatform(tab));
         tab.addEventListener('keydown', (event) => {
