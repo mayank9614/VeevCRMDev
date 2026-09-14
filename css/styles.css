@@ -1809,3 +1809,31 @@ footer {
   font-size: 0.62rem;
   min-height: 28px;
 }
+
+/* The platform selection changes the entire portfolio. */
+[hidden] { display: none !important; }
+body.zoho-mode {
+  --salesforce-blue: #bc2724;
+  --salesforce-blue-dark: #9d2422;
+  --salesforce-navy: #242b35;
+  --salesforce-sky: #1974d2;
+  --salesforce-cloud: #fff0ed;
+  --surface-soft: #faf8f5;
+  --border: #e5dfd8;
+  --shadow-sm: 0 8px 24px rgba(62, 41, 24, 0.07);
+  --shadow-lg: 0 24px 60px rgba(62, 41, 24, 0.13);
+}
+.zoho-mode .site-header { border-top: 4px solid transparent; border-image: linear-gradient(90deg, #e53935 25%, #18753c 25%, #18753c 50%, #1974d2 50%, #1974d2 75%, #f2c335 75%) 1; }
+.zoho-mode .hero { background: radial-gradient(circle at 80% 30%, #fff0c9, transparent 40%), linear-gradient(135deg, #fff7f3, #f1f8f4); }
+.zoho-mode .hero::after { border-color: #e9d6c0; }
+.zoho-mode .portrait-ring { background: conic-gradient(#e53935, #f2c335, #18753c, #1974d2, #e53935); }
+.zoho-mode .about { background: #253c32; }
+.zoho-mode .about .eyebrow,
+.zoho-mode .projects .eyebrow { color: #ffe293; }
+.zoho-mode .about-text p { color: #e0ebe3; }
+.zoho-mode .about-text .lead { color: #fff; }
+.zoho-mode .projects { background: #283444; }
+.zoho-mode .expertise-card:nth-child(2) > i { color: #18753c; }
+.zoho-mode .expertise-card:nth-child(3) > i { color: #1974d2; }
+.zoho-mode .expertise-card:nth-child(4) > i { color: #826000; }
+.zoho-mode .contact-card { background: linear-gradient(125deg, #9d2422, #bc2724); }
