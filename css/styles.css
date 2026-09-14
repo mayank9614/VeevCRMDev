@@ -1778,10 +1778,34 @@ footer {
   .experience-toggle { gap: 5px; padding-inline: 8px; }
 }
 @media (max-width: 800px) {
-  .experience-toggle { margin-left: auto; margin-right: 10px; }
+  .brand { margin-right: auto; }
 }
 @media (max-width: 560px) {
   .cloud-experience { grid-template-columns: 1fr; }
   .experience-toggle { gap: 5px; padding: 8px; font-size: 0.62rem; margin-right: 2px; }
-  .logo-copy { display: none; }
+  .brand .logo-copy { display: flex; }
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  flex-shrink: 0;
+}
+.brand a { text-decoration: none; }
+.brand-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+.brand .experience-toggle {
+  margin: 0;
+  padding: 3px 0;
+  gap: 7px;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  font-size: 0.62rem;
+  min-height: 28px;
 }

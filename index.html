@@ -18,10 +18,15 @@
     <header class="site-header">
         <div class="container">
             <nav class="navbar" aria-label="Primary navigation">
-                <a href="#top" class="logo" aria-label="Mayank Anand, home">
-                    <span class="logo-mark">MA</span>
-                    <span class="logo-copy">Mayank Anand<small>Salesforce Engineering</small></span>
-                </a>
+                <div class="brand">
+                    <a href="#top" class="logo-mark" aria-label="Mayank Anand, home">MA</a>
+                    <div class="brand-details">
+                        <a href="#top" class="logo-copy">Mayank Anand</a>
+                <button id="experience-toggle" class="experience-toggle" type="button" role="switch" aria-checked="false" aria-label="Zoho experience" aria-controls="salesforce-experience zoho">
+                    <span class="toggle-platform">Salesforce</span><span class="toggle-track" aria-hidden="true"><span class="toggle-thumb"></span></span><span>Zoho</span>
+                </button>
+                    </div>
+                </div>
                 <ul class="nav-links" id="primary-navigation">
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
@@ -30,9 +35,6 @@
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <button id="experience-toggle" class="experience-toggle" type="button" role="switch" aria-checked="false" aria-label="Zoho experience" aria-controls="salesforce-experience zoho">
-                    <span class="toggle-platform">Salesforce</span><span class="toggle-track" aria-hidden="true"><span class="toggle-thumb"></span></span><span>Zoho</span>
-                </button>
                 <button class="hamburger" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -278,7 +280,7 @@
         </section>
     </main>
 
-    <footer><div class="container footer-content"><p>&copy; <span id="current-year">2026</span> Mayank Anand</p><p>Designed around clarity, scale, and Salesforce blue.</p></div></footer>
+    <footer><div class="container footer-content"><p>&copy; <span id="current-year">2026</span> Mayank Anand</p></div></footer>
     <script src="js/script.js"></script>
 </body>
 </html>
