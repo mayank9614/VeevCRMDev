@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Keep the original Salesforce markup so switching back restores it exactly.
     const zohoContent = {
-        '.hero-content > .eyebrow': 'Zoho Developer ? Bengaluru, India',
+        '.hero-content > .eyebrow': 'Zoho Developer | Bengaluru, India',
         '.hero-content h1': 'Building Zoho solutions that simplify everyday work.',
-        '.hero-summary': 'I build dynamic widgets, Creator applications, and Deluge automations?connecting Zoho with third-party platforms to turn complex processes into user-friendly tools.',
+        '.hero-summary': 'I build dynamic widgets, Creator applications, and Deluge automations, connecting Zoho with third-party platforms to turn complex processes into user-friendly tools.',
         '.hero-stats': '<div class="stat"><strong>100K+</strong><span>Records supported by a Creator import app</span></div><div class="stat"><strong>Widgets</strong><span>Dynamic Zoho experiences</span></div><div class="stat"><strong>Deluge</strong><span>Custom workflow automation</span></div>',
         '#about .section-heading h2': 'Built for your business.<br>Connected through Zoho.',
         '#about .about-text': '<p class="lead">I specialize in dynamic Zoho widgets, Deluge scripting, and custom applications that make everyday business processes easier.</p><p>My work spans Zoho CRM customization, Creator development, workflow automation, and integrations with third-party applications through REST APIs and webhooks.</p><p>I have built a Creator application that can import more than 100,000 records, with a focus on practical tools, data accuracy, and reliable delivery.</p>',
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ['Development & integration', ['Dynamic widgets', 'Deluge', 'Custom functions', 'REST APIs', 'Webhooks']],
             ['Configuration & delivery', ['Blueprint', 'Approval processes', 'Validation rules', 'Data migration', 'Reports & dashboards', 'Testing & support']]
         ].map(([title, tags]) => `<div class="skills-category"><h3>${title}</h3><ul class="skills-list">${tags.map(tag => `<li>${tag}</li>`).join('')}</ul></div>`).join(''),
-        '#contact .contact-card > div:first-child > p:last-child': 'Let?s discuss Zoho widgets, Creator applications, Deluge automation, and integrations for your business.'
+        '#contact .contact-card > div:first-child > p:last-child': 'Let&#39;s discuss Zoho widgets, Creator applications, Deluge automation, and integrations for your business.'
     };
     const platformContent = Object.entries(zohoContent).map(([selector, zoho]) => {
         const element = document.querySelector(selector);
